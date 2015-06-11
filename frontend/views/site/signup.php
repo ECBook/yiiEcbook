@@ -25,7 +25,7 @@ $this->params['breadcrumbs'][] = $this->title;
 				<!--<?= $form->field($model, 'benutzergruppe')?>-->
 				<br>
 				
-				<?= Html::activeDropDownList($model, 'benutzergruppe',
+				 <?= Html::activeDropDownList($model, 'benutzergruppe',
       ArrayHelper::map(benutzergruppe::find()->all(), 'bg_id', 'bg_name')) ?>
 	  
 				

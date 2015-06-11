@@ -12,7 +12,7 @@ class ValueHelpers
      {
         
         $connection = \Yii::$app->db;
-        $sql = "SELECT bg_id FROM benutzergruppe WHERE bg_name=:bg_name";
+         $sql = "SELECT bg_id FROM benutzergruppe WHERE bg_name=:bg_name";
         $command = $connection->createCommand($sql);
         $command->bindValue(":bg_name", $bg_name);
         $result = $command->queryOne();
