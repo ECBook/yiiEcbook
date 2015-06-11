@@ -52,9 +52,9 @@ class SignupForm extends Model
             $user->setPassword($this->password);
             $user->generateAuthKey();
 			$user->benutzergruppe = $this->benutzergruppe;
-            if ($user->save()) {
+            if ($user->save()) 
                 return $user;
-            }
+            
         }
 
         return null;
